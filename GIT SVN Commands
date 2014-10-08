@@ -1,0 +1,129 @@
+# Clone the directory on my machine
+
+Sushant-Tripathi-MacBook-Pro:~ tcs$ git clone https://github.com/sushant96/ExData_Plotting1
+Cloning into 'ExData_Plotting1'...
+remote: Counting objects: 13, done.
+remote: Total 13 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (13/13), done.
+Checking connectivity... done.
+
+# Check the content of directory
+
+Sushant-Tripathi-MacBook-Pro:~ tcs$ cd ExData_Plotting1
+Sushant-Tripathi-MacBook-Pro:ExData_Plotting1 tcs$ ls -ltr
+total 16
+drwxr-xr-x  6 tcs  staff   204 Oct  8 10:49 figure
+-rw-r--r--  1 tcs  staff  4254 Oct  8 10:49 README.md
+Sushant-Tripathi-MacBook-Pro:ExData_Plotting1 tcs$ cd figure
+Sushant-Tripathi-MacBook-Pro:figure tcs$ ls -ltr
+total 264
+-rw-r--r--  1 tcs  staff  54811 Oct  8 10:49 unnamed-chunk-5.png
+-rw-r--r--  1 tcs  staff  27722 Oct  8 10:49 unnamed-chunk-4.png
+-rw-r--r--  1 tcs  staff  30440 Oct  8 10:49 unnamed-chunk-3.png
+-rw-r--r--  1 tcs  staff  16262 Oct  8 10:49 unnamed-chunk-2.png
+
+# Placed my files in these directory
+
+Sushant-Tripathi-MacBook-Pro:figure tcs$ ls -ltr
+total 536
+-rw-r--r--  1 tcs  staff  54811 Oct  8 10:49 unnamed-chunk-5.png
+-rw-r--r--  1 tcs  staff  27722 Oct  8 10:49 unnamed-chunk-4.png
+-rw-r--r--  1 tcs  staff  30440 Oct  8 10:49 unnamed-chunk-3.png
+-rw-r--r--  1 tcs  staff  16262 Oct  8 10:49 unnamed-chunk-2.png
+-rw-r--r--@ 1 tcs  staff  19459 Oct  8 11:18 plot1.png
+-rw-r--r--  1 tcs  staff  32327 Oct  8 12:19 plot2.png
+-rw-r--r--  1 tcs  staff  27465 Oct  8 12:25 plot3.png
+-rw-r--r--  1 tcs  staff  55541 Oct  8 12:30 plot4.png
+
+# Check Status of newly added files
+Sushant-Tripathi-MacBook-Pro:~ tcs$ cd ExData_Plotting1
+Sushant-Tripathi-MacBook-Pro:ExData_Plotting1 tcs$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	figure/.DS_Store
+	figure/plot1.png
+	figure/plot2.png
+	figure/plot3.png
+	figure/plot4.png
+	plot1.R
+	plot2.R
+	plot3.R
+	plot4.R
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+# Add these files in git
+
+Sushant-Tripathi-MacBook-Pro:figure tcs$ git add plot1.png plot2.png plot3.png  plot4.png
+Sushant-Tripathi-MacBook-Pro:figure tcs$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   plot1.png
+	new file:   plot2.png
+	new file:   plot3.png
+	new file:   plot4.png
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	../plot1.R
+	../plot2.R
+	../plot3.R
+	../plot4.R
+
+# Commit Changes
+
+Sushant-Tripathi-MacBook-Pro:figure tcs$ git commit -m "Changes 1"
+[master 0753c64] Changes 1
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 figure/plot1.png
+ create mode 100644 figure/plot2.png
+ create mode 100644 figure/plot3.png
+ create mode 100644 figure/plot4.png
+
+# Push on remote directory (same name)
+
+Sushant-Tripathi-MacBook-Pro:figure tcs$ git push origin master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 123.03 KiB | 0 bytes/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/sushant96/ExData_Plotting1
+   73fe5c6..0753c64  master -> master
+
+# Similarly for second directory
+
+Sushant-Tripathi-MacBook-Pro:ExData_Plotting1 tcs$ ls -ltr
+total 48
+-rw-r--r--   1 tcs  staff  4254 Oct  8 10:49 README.md
+-rw-r--r--@  1 tcs  staff  1119 Oct  8 11:21 plot1.R
+-rw-r--r--   1 tcs  staff  1237 Oct  8 12:20 plot2.R
+-rw-r--r--   1 tcs  staff  1553 Oct  8 12:26 plot3.R
+drwxr-xr-x  11 tcs  staff   374 Oct  8 12:31 figure
+-rw-r--r--   1 tcs  staff  1921 Oct  8 12:32 plot4.R
+Sushant-Tripathi-MacBook-Pro:ExData_Plotting1 tcs$ git add plot1.R plot2.R plot3.R plot4.R
+Sushant-Tripathi-MacBook-Pro:ExData_Plotting1 tcs$ git commit -m "Changes 2"
+[master e537a2b] Changes 2
+ 4 files changed, 133 insertions(+)
+ create mode 100644 plot1.R
+ create mode 100644 plot2.R
+ create mode 100644 plot3.R
+ create mode 100644 plot4.R
+Sushant-Tripathi-MacBook-Pro:ExData_Plotting1 tcs$  git push origin master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.56 KiB | 0 bytes/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+To https://github.com/sushant96/ExData_Plotting1
+   0753c64..e537a2b  master -> master
