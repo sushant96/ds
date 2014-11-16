@@ -127,3 +127,23 @@ Writing objects: 100% (6/6), 1.56 KiB | 0 bytes/s, done.
 Total 6 (delta 3), reused 0 (delta 0)
 To https://github.com/sushant96/ExData_Plotting1
    0753c64..e537a2b  master -> master
+
+### Push modifed file:
+
+Sushant-Tripathi-MacBook-Pro:RepData_PeerAssessment1 tcs$ git add .
+Sushant-Tripathi-MacBook-Pro:RepData_PeerAssessment1 tcs$ git commit -m "Changes 2"
+[master b9ff3a5] Changes 2
+ 7 files changed, 17948 insertions(+), 25 deletions(-)
+ create mode 100644 .DS_Store
+ create mode 100644 activity.csv
+ create mode 100644 figure/.DS_Store
+ rewrite instructions_fig/unnamed-chunk-11-1.png (96%)
+Sushant-Tripathi-MacBook-Pro:RepData_PeerAssessment1 tcs$ git push origin master
+Counting objects: 17, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (11/11), 137.68 KiB | 0 bytes/s, done.
+Total 11 (delta 5), reused 0 (delta 0)
+To https://github.com/sushant96/RepData_PeerAssessment1
+   a32eac0..b9ff3a5  master -> master
+
